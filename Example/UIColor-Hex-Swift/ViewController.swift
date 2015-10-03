@@ -15,11 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let colors = ["#0", "3f", "123", "00ff00", "12345699"]
+        let colors : [String] = ["#0", "3f", "123", "00ff00", "12345699"]
         var yPosition = 40
-        
-        for (index, colorString) in enumerate(colors){
-            
+      
+        for colorString in colors {
+          
             let square = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
             
             let color = UIColor.colorWithCSS( colorString )
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             
         }
         
-        var v = UIView (frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        let v = UIView (frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         v.backgroundColor = UIColor.colorWithHex(0xff0000)
         v.center = CGPoint(x: 50, y: 200)
         view.addSubview(v)

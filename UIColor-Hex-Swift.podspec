@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UIColor-Hex-Swift"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Create UIColor objects from CSS strings or hexadecimal numbers"
   s.homepage         = "https://github.com/frederik-jacques/UIColor-Hex-Swift"
   s.license          = 'MIT'
